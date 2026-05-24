@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <!-- Wajib ada agar tampilan di HP benar-benar responsif -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peringatan Ujian</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Skrip CSS Responsif Gambar */
+        .img-warning {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #ffcc00; /* Opsional: memberi bingkai kuning */
+            border-radius: 8px;        /* Opsional: membuat sudut melengkung */
+        }
+
+        /* Aturan khusus Laptop (Layar Besar) agar gambar tidak terlalu raksasa */
+        @media (min-width: 768px) {
+            .img-warning {
+                max-width: 450px; /* Membatasi lebar gambar maksimal 450px di laptop */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ganti 'peringatan-ujian.png' dengan nama file gambar Anda -->
+    <img src="perhatian !.webp" alt="Peringatan Ujian Belum Dimulai" class="img-warning">
